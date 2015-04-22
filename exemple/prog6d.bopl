@@ -1,0 +1,11 @@
+program
+  class C0 is
+    methods Bool m0 () begin return true; end
+  class C1 extends C0 is 
+    methods Bool m1 () begin return super.m0(); end
+  let C1 o; in
+  begin
+    o := (new C1);
+    o.m1();
+    o.m0();
+  end

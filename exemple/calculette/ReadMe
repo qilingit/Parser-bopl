@@ -1,0 +1,7 @@
+jflex -J calculette.lex
+	-> Yylex.java
+byacc -J calculette.y
+	-> Parser.java ParserVal.java
+javac Yylex.java Parser.java ParserVal.java
+	-> Yylex.class Parser.class ParserVal.class
+java Parser

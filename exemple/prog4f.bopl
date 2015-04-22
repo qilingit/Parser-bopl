@@ -1,0 +1,6 @@
+program 
+ class C3 extends Obj is 
+   vars Int x;
+   methods Int m () begin return 0; end
+ let C3 o; in 
+ begin return o.m() ; end 

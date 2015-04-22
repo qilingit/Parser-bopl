@@ -1,0 +1,1 @@
+program let Obj i; in begin i.m(); end

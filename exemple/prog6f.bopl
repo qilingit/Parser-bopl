@@ -1,0 +1,20 @@
+program
+  class C0 is
+    methods Bool m0 () begin return true; end
+  class C1 extends C0 is 
+    methods Int m1 () 
+      begin 
+        if super.m0() then begin return 0; end 
+	else begin return 42; end;
+      end
+  class C2 extends C1 is
+    methods Int m1 () 
+      begin 
+        if super.m0() then begin return super.m1(); end 
+	else begin return 42; end;
+      end  
+  let C0 o0; C1 o1; C2 o2; in
+  begin
+    o2 := (new C2);
+    o2.m1();
+  end

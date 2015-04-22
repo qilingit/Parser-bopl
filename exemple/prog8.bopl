@@ -1,0 +1,9 @@
+program 
+let
+Int x, y;
+Bool a;
+Obj z;
+in
+begin 
+
+end

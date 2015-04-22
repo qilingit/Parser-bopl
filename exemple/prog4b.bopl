@@ -1,0 +1,1 @@
+program class C1 extends Obj is let Obj x; in begin return (new C1) ; end 

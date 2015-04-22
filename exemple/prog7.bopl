@@ -1,0 +1,21 @@
+program 
+let
+Int x, y;
+Bool a;
+Obj z;
+in
+begin 
+x := 0; 
+x := x + 1 * 1 - 1 / 1;
+x.x := 0;
+x.x := (new x).x;
+(new x).x := (new x).x;
+x := x.m();
+x := x.m(x);
+x := x.m(x,x);
+x := x.m(x,0,x);
+if (x) then begin end else begin end;
+if (x) then begin x:=0; end else begin x:=1; end;
+while (x=0) do begin end;
+while (x<0) or (not (x=0)) do begin end;
+end

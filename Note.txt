@@ -1,0 +1,17 @@
+Le Répèrtoir des sources: /Vrac/4I503/
+JFlex:
+    /Vrac/4I503/jflex/bin/jflex <lexfile>
+BYacc:
+    /Vrac/4I503/byacc -] <yaccfile>
+    
+/examples/byaccj/calc.x
+
+
+%token	<sval> .....		#<sval> est à dire "string value"
+%token	<dval> .....		#<dval> -> "double value"
+%start "chaîne"							#parser commence par "chaîne"
+
+noublie pas d'ajouter { \r\t\n} dans le program .lex
+
+Pour compiler:
+jflex/bin/jflex tme1.lex; byacc -J tme1.y; javac *.java; java Parser exemple/prog3e.bopl 

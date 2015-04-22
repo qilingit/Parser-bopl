@@ -1,0 +1,1 @@
+program let Int x; in begin x := null; end

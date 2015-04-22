@@ -1,0 +1,7 @@
+program 
+ begin 
+  if (0 = 0) then
+    begin return 1; end
+  else
+    begin return 0; end;
+ end 

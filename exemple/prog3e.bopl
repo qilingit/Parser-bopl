@@ -1,0 +1,1 @@
+program let Void x; in begin return (x instanceof Obj) ; end 

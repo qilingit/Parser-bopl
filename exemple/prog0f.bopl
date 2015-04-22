@@ -1,0 +1,3 @@
+program 
+  class C1 is methods Void m1 () begin super.m0(); end
+  begin end

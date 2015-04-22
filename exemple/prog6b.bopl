@@ -1,0 +1,9 @@
+program
+  class C0 is
+    methods Void m0 () begin return null; end
+  class C1 extends C0 is 
+    methods Void m1 () begin return super.m0(); end
+  begin
+    (new C0).m0();
+    (new C1).m1();
+  end

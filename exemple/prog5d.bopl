@@ -1,0 +1,3 @@
+program
+  let Int x; in
+  begin writeln x; return (x=0); writeln x; end

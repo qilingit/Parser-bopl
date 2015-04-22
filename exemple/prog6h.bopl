@@ -1,0 +1,8 @@
+// Test: sous type
+program
+  class C0 is
+    methods Void m0(C0 o) begin return void; end
+  class C1 is
+    methods Void m1() begin super.m0(self); end
+  begin end
+

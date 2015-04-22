@@ -1,0 +1,12 @@
+program 
+class C is 
+vars Int x; Bool a,b;
+methods 
+Void m () begin end
+Obj m (Int x; Bool y) begin return null; end
+class CC extends C is 
+methods
+Void m () let Int x; in begin end
+begin 
+
+end
